@@ -1,0 +1,92 @@
+.filters{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left:20px ;
+}
+::ng-deep{
+    .mat-form-field-infix{
+        background-color: rgb(1, 0, 34);
+    }
+    .mat-select-value,
+    .mat-select-arrow,
+    .mat-form-field-hide-placeholder .mat-select-placeholder,
+    .mat-form-field-appearance-legacy .mat-form-field-lable{
+        color: #fff !important;
+        // opacity: 1;
+
+    }
+    .mat-form-field-infix{
+        border-color:#fff !important ;
+        border-top: none;
+        padding-left: 5px !important;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-lable{
+        padding-left: 5px !important;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-underline{
+        background-color: #fff !important;
+    }
+}
+
+.games{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     max-width: 1200px;
+     margin: 20px auto;
+}
+.game{
+    width: 280px;
+    margin: 10px;
+    height: 330px;
+    background: #1d004d;
+    border-radius: 5px;
+    overflow:   hidden;
+    box-shadow: 4px 3px 8px 0px rgb(1, 0, 34);
+    transition-duration:0.3s ;
+    
+    &:hover{
+        box-shadow: 4px 3px 11px 6px rgb(1, 0, 34);
+        transform: translateY(-3px);
+    }
+
+    &-thumb-container{
+        background: #000;
+        position: relative;
+        height: 172px;
+        color: white;
+        text-align: center;
+    }
+    &-thumbnail{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 172px;
+
+    }
+    &-description{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 157px;
+    }
+    &-name{
+        color: #fff;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &-platforms{
+        display:flex
+    }
+    &-platform{
+        width: 20px;
+        margin-right: 10px;
+    }
+}
